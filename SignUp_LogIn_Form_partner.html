@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup Form</title>
+    <link rel="stylesheet" href="SignUp_LogIn_Form.css">
+    	
+</head>
+  <body>
+
+      <div class="container">
+          <div class="form-box login">
+              <form action="login_P" method="get">
+                  <h1>Partner Login </h1>
+                  <div class="input-box">
+                      <input type="text" placeholder="email" name="email" required>
+                      <i class='bx bxs-user'></i>
+                  </div>
+                  <div class="input-box">
+                      <input type="password" placeholder="Password" name="password" required>
+                      <i class='bx bxs-lock-alt' ></i>
+                  </div>
+                  <div class="forgot-link">
+                      <a href="#">Forgot Password?</a>
+                  </div>
+                  <button type="submit" class="btn">Login</button>
+                  
+              </form>
+          </div>
+
+          <div class="form-box register">
+              <form action="InsertData_P"  method ="post">
+                  <h2>Partner Registration</h2>
+                  <div class="input-box">
+                      <input type="text" placeholder="Username" name="user_name" required>
+                      <i class='bx bxs-user'></i>
+                  </div>
+                  <div class="input-box">
+                      <input type="email" placeholder="Email" name="email" required>
+                      <i class='bx bxs-envelope' ></i>
+                  </div>
+                  <div class="input-box">
+                      <input type="password" placeholder="Password" name="password" required>
+                      <i class='bx bxs-lock-alt' ></i>
+                  </div>
+                   <div class="input-box">
+                      <input type="text" placeholder="phonenumber" name="mob_no" required>
+                      <i class='bx bxs-lock-alt' ></i>
+                  </div>
+                   <div class="input-box">
+                      <input type="text" placeholder="Location" name="location" required>
+                      <i class='bx bxs-lock-alt' ></i>
+                  </div>
+                  <div class="input-box">
+                     <label for="ev_capacity">Capacity of EV Charge:</label>
+<select id="ev_capacity" name="capacity" required>
+  <option value="">--Select Capacity--</option>
+  <option value="3.3kW">3 Amp</option>
+  <option value="7.4kW">7 Amp</option>
+  <option value="11kW">11 Amp</option>
+  <option value="22kW">22 Amp</option>
+  <option value="50kW">50 Amp</option>
+  <option value="100kW">100 Amp</option>
+</select>
+                      <i class='bx bxs-lock-alt' ></i>
+                  </div>
+                  
+                 
+                  
+                  
+                  <button type="submit" class="btn">Register</button>
+                 
+              </form>
+          </div>
+
+          <div class="toggle-box">
+              <div class="toggle-panel toggle-left">
+                  <h1>Hello, Welcome!</h1>
+                  <p>Don't have an account?</p>
+                  <button class="btn register-btn">Register</button><br>
+                  <p> <a href="SignUp_LogIn_Form.html" class="partner">Register as a User</a></p>
+                  
+              </div>
+
+              <div class="toggle-panel toggle-right">
+                  <h1>Welcome Back!</h1>
+                  <p>Already have an account?</p>
+                  <button class="btn login-btn">Login</button><br>
+					<p> <a href="SignUp_LogIn_Form.html" class="partner">login as a User</a></p>
+                  
+              </div>
+          </div>
+           
+      </div>
+
+      <script src="SignUp_LogIn_Form.js"></script>
+  </body>
+</html>
